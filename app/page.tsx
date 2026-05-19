@@ -1,232 +1,727 @@
+"use client";
+
+import { useState } from "react";
+
 export default function AcademicAIServiceWebsite() {
+  const [selectedFounder, setSelectedFounder] = useState<string | null>(null);
+
   return (
-    <div
-      id="top"
-      className="bg-slate-50 text-slate-800 scroll-smooth selection:bg-emerald-400 selection:text-slate-950"
-    >
+    <div className="bg-[#020617] text-white overflow-x-hidden scroll-smooth">
+
+      {/* BACKGROUND */}
+
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-emerald-500/20 blur-[120px] rounded-full"></div>
+
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[120px] rounded-full"></div>
+
+      </div>
+
       {/* NAVBAR */}
-      <header className="sticky top-0 z-50 backdrop-blur-2xl bg-slate-950/80 border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-emerald-400 text-slate-950 flex items-center justify-center text-2xl font-black">
+
+      <header className="sticky top-0 z-50 backdrop-blur-2xl bg-black/30 border-b border-white/10">
+
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+          <div className="flex items-center gap-5">
+
+            <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-400 to-cyan-400 flex items-center justify-center text-black text-5xl font-black shadow-2xl shadow-emerald-500/30">
               SA
             </div>
 
             <div>
-              <h1 className="text-2xl font-black text-white leading-none">
+              <h1 className="text-5xl font-black leading-none">
                 SMART ACADEMIC
               </h1>
 
-              <p className="text-emerald-300 font-semibold">
+              <h2 className="text-emerald-400 text-3xl font-black">
                 SUPPORT CENTER
+              </h2>
+
+              <p className="text-slate-400 text-lg mt-1">
+                AI for Research, Academic Writing & Publication
               </p>
             </div>
+
           </div>
 
-          <nav className="hidden lg:flex items-center gap-8 text-white font-semibold">
-            <a href="#top" className="hover:text-emerald-400 transition">
+          <nav className="hidden lg:flex items-center gap-12 text-xl font-bold">
+
+            <a
+              href="#beranda"
+              className="hover:text-emerald-400 transition-all duration-700"
+            >
               Beranda
             </a>
 
-            <a href="#layanan" className="hover:text-emerald-400 transition">
+            <a
+              href="#layanan"
+              className="hover:text-emerald-400 transition-all duration-700"
+            >
               Layanan
             </a>
 
-            <a href="#pelatihan" className="hover:text-emerald-400 transition">
+            <a
+              href="#pelatihan"
+              className="hover:text-emerald-400 transition-all duration-700"
+            >
               Pelatihan
             </a>
 
-            <a href="#founder" className="hover:text-emerald-400 transition">
+            <a
+              href="#founder"
+              className="hover:text-emerald-400 transition-all duration-700"
+            >
               Founder
             </a>
 
-            <a href="#harga" className="hover:text-emerald-400 transition">
+            <a
+              href="#harga"
+              className="hover:text-emerald-400 transition-all duration-700"
+            >
               Harga
             </a>
 
-            <a href="#kontak" className="hover:text-emerald-400 transition">
+            <a
+              href="#kontak"
+              className="hover:text-emerald-400 transition-all duration-700"
+            >
               Kontak
             </a>
+
           </nav>
 
           <a
             href="https://wa.me/6285262608383"
-            className="bg-emerald-400 hover:bg-emerald-300 text-slate-950 px-5 py-3 rounded-2xl font-bold transition"
+            target="_blank"
+            className="hidden lg:flex bg-gradient-to-r from-emerald-400 to-cyan-400 text-black font-black px-10 py-5 rounded-3xl hover:scale-105 transition-all duration-700 shadow-2xl shadow-emerald-500/20"
           >
             WhatsApp Admin
           </a>
+
         </div>
+
       </header>
 
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-slate-950 text-white min-h-[90vh] flex items-center">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1800&auto=format&fit=crop"
-            alt="Academic"
-            className="w-full h-full object-cover opacity-20"
-          />
+      {/* TRAINING FLASH */}
 
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-emerald-950/70"></div>
+      <section
+        id="pelatihan"
+        className="max-w-7xl mx-auto px-6 pt-10"
+      >
+
+        <div className="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-white/10 rounded-[2rem] p-8 flex flex-col lg:flex-row items-center justify-between gap-6 backdrop-blur-2xl">
+
+          <div>
+
+            <h3 className="text-4xl font-black text-emerald-400 mb-4">
+              🎓 Pelatihan Online Review Artikel Ilmiah Gratis
+            </h3>
+
+            <p className="text-slate-300 text-xl">
+              Sabtu, 24 Mei 2026 • 09.00 WIB • AI Research • Publikasi • Academic Writing
+            </p>
+
+          </div>
+
+          <a
+            href="https://chat.whatsapp.com/JxLnff35oUrJZhPTXycPrH"
+            target="_blank"
+            className="bg-gradient-to-r from-emerald-400 to-cyan-400 text-black text-2xl font-black px-10 py-5 rounded-3xl hover:scale-105 transition-all duration-700"
+          >
+            Daftar Gratis Sekarang
+          </a>
+
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      </section>
+
+      {/* HERO */}
+
+      <section
+        id="beranda"
+        className="relative min-h-screen flex items-center"
+      >
+
+        <div className="max-w-7xl mx-auto px-6 py-28">
+
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
 
             {/* LEFT */}
+
             <div>
-              <div className="inline-flex items-center gap-3 bg-white/10 border border-white/10 px-5 py-3 rounded-full text-sm font-semibold text-emerald-100 mb-8">
-                AI Research • Academic Writing • Publication Support
+
+              <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-full px-6 py-3 mb-10 backdrop-blur-xl">
+
+                <span className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
+
+                <span className="text-slate-300 text-lg">
+                  Academic AI • Research • Publication • Mentoring
+                </span>
+
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight mb-8">
-                Solusi Akademik Modern
-                <span className="block text-emerald-400">
-                  Berbasis AI Premium
+              <h1 className="text-7xl lg:text-8xl font-black leading-[0.95] mb-10">
+
+                <span className="text-white">
+                  Solusi Akademik
                 </span>
+
+                <br />
+
+                <span className="text-white">
+                  Modern
+                </span>
+
+                <br />
+
+                <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+                  Berbasis AI
+                </span>
+
               </h1>
 
-              <p className="text-xl text-slate-200 leading-relaxed max-w-2xl mb-10">
+              <p className="text-slate-300 text-2xl leading-relaxed max-w-3xl mb-12">
                 Platform bantuan akademik modern untuk mahasiswa,
-                dosen, peneliti, guru, dan profesional dengan
-                dukungan AI premium dan human editing.
+                dosen, guru, peneliti, dan profesional dalam
+                penyusunan skripsi, publikasi jurnal, AI research,
+                pelatihan akademik, dan pengembangan karya ilmiah.
               </p>
 
-              <div className="flex flex-wrap gap-5 mb-10">
+              <div className="flex flex-wrap gap-6 mb-16">
+
                 <a
                   href="https://wa.me/6285262608383"
-                  className="bg-emerald-400 hover:bg-emerald-300 text-slate-950 px-8 py-4 rounded-2xl font-black text-lg transition hover:scale-105"
+                  target="_blank"
+                  className="bg-gradient-to-r from-emerald-400 to-cyan-400 text-black text-xl font-black px-12 py-6 rounded-3xl hover:scale-105 transition-all duration-700 shadow-2xl shadow-emerald-500/30"
                 >
                   Konsultasi Gratis
                 </a>
 
                 <a
                   href="#layanan"
-                  className="border border-white/20 bg-white/5 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-slate-950 transition"
+                  className="bg-white/5 border border-white/10 text-white text-xl px-12 py-6 rounded-3xl hover:bg-white/10 transition-all duration-700"
                 >
-                  Lihat Layanan
+                  Jelajahi Layanan
                 </a>
+
               </div>
 
-              <div className="flex flex-wrap gap-6 text-slate-300 font-medium">
-                <span>✓ Mahasiswa</span>
-                <span>✓ Peneliti</span>
-                <span>✓ Dosen</span>
-                <span>✓ Guru</span>
-                <span>✓ Profesional</span>
+              <div className="grid grid-cols-3 gap-6">
+
+                <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-xl">
+
+                  <div className="text-5xl font-black text-emerald-400 mb-3">
+                    24/7
+                  </div>
+
+                  <p className="text-slate-400 text-lg">
+                    Konsultasi Akademik
+                  </p>
+
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-xl">
+
+                  <div className="text-5xl font-black text-cyan-400 mb-3">
+                    AI
+                  </div>
+
+                  <p className="text-slate-400 text-lg">
+                    Research Assistant
+                  </p>
+
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-xl">
+
+                  <div className="text-5xl font-black text-emerald-400 mb-3">
+                    Human
+                  </div>
+
+                  <p className="text-slate-400 text-lg">
+                    Academic Editing
+                  </p>
+
+                </div>
+
               </div>
+
             </div>
 
             {/* RIGHT */}
-            <div>
-              <div className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-8 shadow-2xl">
 
-                <div className="mb-8">
-                  <p className="text-emerald-300 font-semibold mb-3">
-                    Pelatihan Gratis Mingguan
-                  </p>
+            <div
+              id="founder"
+              className="relative"
+            >
 
-                  <h3 className="text-3xl font-black mb-4">
-                    Review Artikel Ilmiah
-                  </h3>
+              <div className="bg-white/5 border border-white/10 rounded-[3rem] p-10 backdrop-blur-2xl shadow-2xl">
 
-                  <p className="text-slate-300 leading-relaxed">
-                    Belajar review jurnal, AI research,
-                    publikasi ilmiah, dan academic writing
-                    bersama mentor akademik.
-                  </p>
+                <div className="flex items-center justify-between mb-10">
+
+                  <div>
+
+                    <p className="text-emerald-400 text-xl font-bold mb-3">
+                      Founder & Academic Mentor
+                    </p>
+
+                    <h2 className="text-5xl font-black">
+                      Research Mentor Team
+                    </h2>
+
+                  </div>
+
+                  <div className="w-5 h-5 rounded-full bg-emerald-400 animate-pulse"></div>
+
                 </div>
 
-                <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="grid md:grid-cols-2 gap-8">
 
-                  <div className="bg-black/20 rounded-2xl p-5 text-center">
-                    <div className="text-3xl font-black text-emerald-400">
-                      24/7
-                    </div>
+                  {/* KHARIRUL */}
 
-                    <p className="text-sm text-slate-300 mt-2">
-                      Support
+                  <button
+                    onClick={() => setSelectedFounder("khairul")}
+                    className="bg-white/5 border border-white/10 rounded-[2rem] p-8 hover:bg-white/10 transition-all duration-700 text-left"
+                  >
+
+                    <img
+                      src="/founder-khairul.jpg"
+                      alt="Muhammad Khairul"
+                      className="w-32 h-32 rounded-full object-cover border-4 border-emerald-400 mb-6"
+                    />
+
+                    <h3 className="text-3xl font-black mb-3">
+                      Muhammad Khairul
+                    </h3>
+
+                    <p className="text-emerald-400 text-lg mb-5">
+                      Academic Research Mentor
                     </p>
-                  </div>
 
-                  <div className="bg-black/20 rounded-2xl p-5 text-center">
-                    <div className="text-3xl font-black text-emerald-400">
-                      AI+
-                    </div>
-
-                    <p className="text-sm text-slate-300 mt-2">
-                      Premium
+                    <p className="text-slate-400 leading-relaxed">
+                      Fokus pada penelitian pendidikan,
+                      academic writing,
+                      AI research,
+                      dan publikasi ilmiah.
                     </p>
-                  </div>
 
-                  <div className="bg-black/20 rounded-2xl p-5 text-center">
-                    <div className="text-3xl font-black text-emerald-400">
-                      4.9
-                    </div>
+                  </button>
 
-                    <p className="text-sm text-slate-300 mt-2">
-                      Rating
+                  {/* NURUL */}
+
+                  <button
+                    onClick={() => setSelectedFounder("nurul")}
+                    className="bg-white/5 border border-white/10 rounded-[2rem] p-8 hover:bg-white/10 transition-all duration-700 text-left"
+                  >
+
+                    <img
+                      src="/founder-nurul.jpg"
+                      alt="Dr Nurul Fajri"
+                      className="w-32 h-32 rounded-full object-cover border-4 border-cyan-400 mb-6"
+                    />
+
+                    <h3 className="text-3xl font-black mb-3">
+                      Dr. Nurul Fajri
+                    </h3>
+
+                    <p className="text-cyan-400 text-lg mb-5">
+                      Publication & Research Advisor
                     </p>
-                  </div>
+
+                    <p className="text-slate-400 leading-relaxed">
+                      Aktif dalam publikasi ilmiah,
+                      pelatihan akademik,
+                      dan pendampingan penelitian.
+                    </p>
+
+                  </button>
+
                 </div>
+
+                <div className="mt-10 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-white/10 rounded-[2rem] p-8">
+
+                  <div className="grid grid-cols-3 gap-8 text-center">
+
+                    <div>
+
+                      <div className="text-5xl font-black text-white mb-3">
+                        2500+
+                      </div>
+
+                      <p className="text-slate-400">
+                        Academic Users
+                      </p>
+
+                    </div>
+
+                    <div>
+
+                      <div className="text-5xl font-black text-white mb-3">
+                        700+
+                      </div>
+
+                      <p className="text-slate-400">
+                        Publications
+                      </p>
+
+                    </div>
+
+                    <div>
+
+                      <div className="text-5xl font-black text-white mb-3">
+                        100+
+                      </div>
+
+                      <p className="text-slate-400">
+                        Workshops
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* SERVICES */}
+
+      <section
+        id="layanan"
+        className="py-28"
+      >
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-20">
+
+            <p className="text-emerald-400 text-2xl font-bold mb-5">
+              Academic Services
+            </p>
+
+            <h2 className="text-6xl font-black mb-8">
+              Layanan Akademik Premium
+            </h2>
+
+            <p className="text-slate-400 text-2xl max-w-4xl mx-auto">
+              Mendukung seluruh kebutuhan penelitian,
+              publikasi, dan pengembangan akademik modern.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {[
+              "Skripsi & Tesis",
+              "Publikasi Jurnal",
+              "AI Research",
+              "Editing Akademik",
+              "Analisis Data",
+              "Pelatihan Akademik",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-[2rem] p-10 hover:-translate-y-2 hover:bg-white/10 transition-all duration-700"
+              >
+
+                <div className="text-5xl mb-6">
+                  🎓
+                </div>
+
+                <h3 className="text-3xl font-black mb-5">
+                  {item}
+                </h3>
+
+                <p className="text-slate-400 leading-relaxed text-lg">
+                  Layanan profesional berbasis AI premium
+                  dan human mentoring akademik.
+                </p>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* WHY US */}
+
+      <section className="py-28 bg-white text-slate-900">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-20">
+
+            <p className="text-emerald-500 text-2xl font-bold mb-5">
+              Mengapa Memilih Kami
+            </p>
+
+            <h2 className="text-6xl font-black mb-8">
+              Academic Support Modern
+            </h2>
+
+            <p className="text-slate-600 text-2xl max-w-4xl mx-auto">
+              Menggabungkan AI premium,
+              mentoring akademik,
+              dan human editing profesional.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {[
+              "Fast Response",
+              "AI + Human Editing",
+              "Mentor Akademik",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-slate-50 rounded-[2rem] p-10 border border-slate-100"
+              >
+
+                <div className="text-6xl mb-6">
+                  ⚡
+                </div>
+
+                <h3 className="text-3xl font-black mb-5">
+                  {item}
+                </h3>
+
+                <p className="text-slate-600 text-lg leading-relaxed">
+                  Pendampingan akademik modern,
+                  profesional,
+                  dan terpercaya.
+                </p>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* PRICING */}
+
+      <section
+        id="harga"
+        className="py-28"
+      >
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-20">
+
+            <p className="text-emerald-400 text-2xl font-bold mb-5">
+              Paket Layanan
+            </p>
+
+            <h2 className="text-6xl font-black mb-8">
+              Harga Profesional
+            </h2>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {[
+              {
+                title: "Basic",
+                price: "50K",
+              },
+              {
+                title: "Professional",
+                price: "150K",
+              },
+              {
+                title: "Premium",
+                price: "300K",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-[2rem] p-10 text-center"
+              >
+
+                <h3 className="text-4xl font-black mb-6">
+                  {item.title}
+                </h3>
+
+                <div className="text-7xl font-black text-emerald-400 mb-8">
+                  {item.price}
+                </div>
+
+                <p className="text-slate-400 text-lg mb-10">
+                  Konsultasi • Editing • AI Research
+                </p>
 
                 <a
-                  href="https://chat.whatsapp.com/JxLnff35oUrJZhPTXycPrH"
-                  className="block text-center bg-emerald-400 hover:bg-emerald-300 text-slate-950 px-6 py-4 rounded-2xl font-black text-lg transition"
+                  href="https://wa.me/6285262608383"
+                  target="_blank"
+                  className="inline-block bg-gradient-to-r from-emerald-400 to-cyan-400 text-black font-black px-10 py-5 rounded-2xl"
                 >
-                  Ikuti Pelatihan Gratis
+                  Konsultasi
                 </a>
+
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TRUST */}
-      <section className="bg-white py-14 border-y border-slate-100">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-6">
-
-            <div className="bg-slate-50 rounded-3xl p-8 text-center">
-              <div className="text-5xl font-black text-emerald-500 mb-3">
-                2500+
-              </div>
-
-              <p className="text-slate-600">
-                Klien Akademik
-              </p>
-            </div>
-
-            <div className="bg-slate-50 rounded-3xl p-8 text-center">
-              <div className="text-5xl font-black text-emerald-500 mb-3">
-                5000+
-              </div>
-
-              <p className="text-slate-600">
-                Dokumen Selesai
-              </p>
-            </div>
-
-            <div className="bg-slate-50 rounded-3xl p-8 text-center">
-              <div className="text-5xl font-black text-emerald-500 mb-3">
-                100+
-              </div>
-
-              <p className="text-slate-600">
-                Pelatihan Akademik
-              </p>
-            </div>
-
-            <div className="bg-slate-50 rounded-3xl p-8 text-center">
-              <div className="text-5xl font-black text-emerald-500 mb-3">
-                4.9/5
-              </div>
-
-              <p className="text-slate-600">
-                Rating Kepuasan
-              </p>
-            </div>
+            ))}
 
           </div>
+
         </div>
+
       </section>
+
+      {/* CONTACT */}
+
+      <section
+        id="kontak"
+        className="py-28"
+      >
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h2 className="text-6xl font-black mb-10">
+            Konsultasi Sekarang
+          </h2>
+
+          <p className="text-slate-400 text-2xl mb-14">
+            Hubungi admin untuk konsultasi,
+            pelatihan,
+            dan layanan akademik.
+          </p>
+
+          <a
+            href="https://wa.me/6285262608383"
+            target="_blank"
+            className="inline-block bg-gradient-to-r from-emerald-400 to-cyan-400 text-black text-2xl font-black px-16 py-7 rounded-[2rem] hover:scale-105 transition-all duration-700"
+          >
+            WhatsApp Admin
+          </a>
+
+        </div>
+
+      </section>
+
+      {/* FOOTER */}
+
+      <footer className="bg-black border-t border-white/10 py-14 text-center text-slate-500">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <h3 className="text-4xl font-black text-white mb-5">
+            Smart Academic Support Center
+          </h3>
+
+          <p className="text-xl mb-8">
+            Platform bantuan akademik modern berbasis AI premium.
+          </p>
+
+          <div className="flex justify-center gap-8 mb-10 text-lg">
+
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#pelatihan">Pelatihan</a>
+            <a href="#kontak">Kontak</a>
+
+          </div>
+
+          <div className="border-t border-white/10 pt-8">
+            © 2026 Smart Academic Support Center.
+            All rights reserved.
+          </div>
+
+        </div>
+
+      </footer>
+
+      {/* POPUP */}
+
+      {selectedFounder && (
+
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-xl z-50 flex items-center justify-center p-6">
+
+          <div className="bg-[#07111f] border border-white/10 rounded-[3rem] max-w-3xl w-full p-10 relative">
+
+            <button
+              onClick={() => setSelectedFounder(null)}
+              className="absolute top-6 right-6 text-3xl"
+            >
+              ✕
+            </button>
+
+            {selectedFounder === "khairul" && (
+              <div>
+
+                <img
+                  src="/founder-khairul.jpg"
+                  className="w-40 h-40 rounded-full object-cover border-4 border-emerald-400 mb-8"
+                />
+
+                <h2 className="text-5xl font-black mb-4">
+                  Muhammad Khairul
+                </h2>
+
+                <p className="text-emerald-400 text-2xl mb-8">
+                  Academic Research Mentor
+                </p>
+
+                <p className="text-slate-300 text-xl leading-relaxed">
+                  Fokus pada penelitian pendidikan,
+                  academic writing,
+                  AI research,
+                  dan pengembangan publikasi ilmiah modern.
+                </p>
+
+              </div>
+            )}
+
+            {selectedFounder === "nurul" && (
+              <div>
+
+                <img
+                  src="/founder-nurul.jpg"
+                  className="w-40 h-40 rounded-full object-cover border-4 border-cyan-400 mb-8"
+                />
+
+                <h2 className="text-5xl font-black mb-4">
+                  Dr. Nurul Fajri
+                </h2>
+
+                <p className="text-cyan-400 text-2xl mb-8">
+                  Publication & Research Advisor
+                </p>
+
+                <p className="text-slate-300 text-xl leading-relaxed">
+                  Aktif dalam publikasi ilmiah,
+                  pelatihan akademik,
+                  dan pendampingan penelitian mahasiswa.
+                </p>
+
+              </div>
+            )}
+
+          </div>
+
+        </div>
+
+      )}
+
+    </div>
+  );
+}
