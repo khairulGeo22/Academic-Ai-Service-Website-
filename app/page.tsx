@@ -12,7 +12,7 @@ export default function AcademicAIServiceWebsite() {
   return (
     <div
       id="top"
-      className="min-h-screen bg-slate-50 text-slate-800 scroll-smooth selection:bg-emerald-400 selection:text-slate-950"
+      className="min-h-[85vh] bg-slate-50 text-slate-800 scroll-smooth selection:bg-emerald-400 selection:text-slate-950"
     >
       <header className="relative overflow-hidden bg-slate-950 text-white min-h-screen">
         <div className="absolute inset-0">
@@ -27,7 +27,7 @@ export default function AcademicAIServiceWebsite() {
 
         <div className="relative z-20 border-b border-white/10 backdrop-blur-xl bg-black/20">
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-3">
               <div className="w-16 h-16 rounded-2xl bg-emerald-400 flex items-center justify-center text-slate-950 text-3xl font-black shadow-2xl">
                 SA
               </div>
@@ -101,7 +101,7 @@ export default function AcademicAIServiceWebsite() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-14 items-center py-12 lg:py-24">
+          <div className="grid lg:grid-cols-2 items-center gap-10 py-12 lg:py-12">
             <div>
               <div className="inline-flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur px-5 py-3 rounded-full text-sm font-semibold text-emerald-100 mb-8 shadow-xl">
                 Pusat Bantuan Akademik • AI Research • Publikasi Ilmiah
@@ -281,7 +281,7 @@ export default function AcademicAIServiceWebsite() {
 
           <div className="grid md:grid-cols-4 gap-6 mt-10">
             <div className="bg-white/10 border border-white/10 backdrop-blur-xl rounded-[2rem] p-6 text-center shadow-xl">
-              <div className="text-5xl font-black text-emerald-400 mb-3">
+              <div className="text-4xl font-black text-emerald-400 mb-3">
                 2500+
               </div>
               <p className="text-slate-300">Klien Akademik</p>
@@ -312,7 +312,7 @@ export default function AcademicAIServiceWebsite() {
       </header>
 
       <section className="py-16 bg-white border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-6">
               Dokumentasi Kegiatan Akademik
@@ -867,7 +867,7 @@ export default function AcademicAIServiceWebsite() {
       <a
         href="https://wa.me/6285262608383"
         target="_blank"
-        className="fixed bottom-6 right-6 z-50 bg-emerald-400 hover:bg-emerald-300 text-slate-950 px-6 py-4 rounded-full shadow-2xl font-black transition hover:scale-110"
+        className="fixed bottom-4 right-4 z-50 bg-emerald-400 hover:bg-emerald-300 text-slate-950 px-6 py-4 rounded-full shadow-2xl font-black transition hover:scale-110"
       >
         WhatsApp Admin
       </a>
